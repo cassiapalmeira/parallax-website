@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 body, html {
     height: 100%;
     margin: 0;
@@ -10,23 +12,59 @@ body, html {
     color: #666;
 }
 
+#container1, #container2, #container3, #container4 {
+    position: relative;
+}
+
+div.quadro {
+    background-color: rgba(0, 0, 0, 0.753);
+    max-width: 400px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.quadro > p {
+    text-align: center;
+    margin: 0%;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.822);
+}
+
 div.imagem1 {
     background-color: black;
-    background-image: url('images/city1.jpg');
+    background-image: url('images/city1-pq.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    opacity: 0.8;
     min-height: 100%;
 }
 
-.fundo-claro {
-/*FAZER*/
+.fundo-claro, .fundo-escuro {
+    padding: 20px;
 }
 
 .fundo-escuro {
     background-color: #1f1f1f;
     color: white;
+}
+
+section > h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+section > p {
+    text-align: justify;
 }
 
 section > h2, section > p {
@@ -35,20 +73,22 @@ section > h2, section > p {
 
 div.imagem2 {
     background-color: black;
-    background-image: url('images/city2.jpg');
+    background-image: url('images/city2-pq.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    opacity: 0.9;
     min-height: 400px;
 }
 
 div.imagem3 {
     background-color: black;
-    background-image: url('images/city3.jpg');
+    background-image: url('images/city3-pq.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    opacity: 0.9;
     min-height: 400px;
 }
