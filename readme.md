@@ -1,0 +1,1 @@
+Um mini-projeto para um site com efeito parallax.
